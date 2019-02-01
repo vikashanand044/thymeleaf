@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1 style="text-align: center;">Student Registration </h1>
+		<hr>
+		<div style="text-align: center;">
+		<form th:action="@{/svae}" th:object="${svae}" method="post">
+	<lable for="name">UserName</lable>
+	<input type="text" id="user" name="user" autofocus="autofocus"><br>
+	<lable for="password">password</lable>
+	<input type="text" id="pwd" name="pwd"><br>
+	
+	<input type="submit" value="Submit">
+	
+	</form>
+		
+		</div>
+		
+</body>
+</html>
